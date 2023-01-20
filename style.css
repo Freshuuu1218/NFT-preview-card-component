@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 10rem;
+    width: 25rem;
+}
+
+.image-section{
+    overflow: hidden;
+    border-radius: 1em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(178, 100%, 50%);
+}
+.image-section .nft-img{
+    width: 22.5rem;
+}
+.image-section .nft-img:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+.eye{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.image-section .nft-img:hover + .eye{
+    display: block;
+}
+.content{
+    font-family: 'Outfit', sans-serif;
+}
+.content h1{
+    font-size: 1.5rem; 
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    margin: .75em 0;
+   
+}
+.content h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.content p{
+    color: hsl(215, 51%, 70%);
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin: 1em 0;
+    letter-spacing: .06em;
+}
+#eth-time-section{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    margin: 1.5em 0;
+}
+.content .eth{
+    color: hsl(178, 100%, 50%);
+    letter-spacing: .07em;
+}
+.content .time{
+    color: hsl(215, 51%, 70%);
+        letter-spacing: .07em;
+}
+
+hr{
+    height: 5px;
+    border-color: hsl(215, 32%, 27%);
+    background-color: hsl(215, 32%, 27%);
+}
+.author{
+    display: flex;
+    align-items: center;
+    margin-top: .75rem;  
+}
+.author img{
+    width: 3rem;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+.author p{
+    font-size: 1.1rem;
+    margin-left: 1em;
+    letter-spacing: 0.03em;
+}
+.author a{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+.author a:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+@media(max-width:400px){
+    .wrapper{
+        width: 90vw;
+    }
+    .image-section{
+        height:18rem;
+    }
+}
